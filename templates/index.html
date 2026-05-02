@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Healthcare DevSecOps</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#11998e,#38ef7d);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.card{
+background:white;
+width:450px;
+padding:35px;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+text-align:center;
+}
+
+.badge{
+background:#28a745;
+color:white;
+padding:8px 18px;
+border-radius:20px;
+display:inline-block;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+h1{
+margin:10px 0;
+color:#222;
+}
+
+.stat{
+font-size:30px;
+font-weight:bold;
+color:#11998e;
+margin:10px 0;
+}
+
+p{
+color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="badge">🔒 {{ status }}</div>
+
+<h1>Healthcare System</h1>
+
+<p>Patients in Queue</p>
+<div class="stat">{{ patients }}</div>
+
+<p>Version {{ version }}</p>
+
+<p>Updated: {{ updated }}</p>
+
+<p>Jenkins + Docker + Kubernetes + Security Scan</p>
+
+</div>
+
+</body>
+</html>
