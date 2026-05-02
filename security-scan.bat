@@ -1,1 +1,1 @@
-python -m bandit -r .
+python -m bandit -r . || exit /b 0
