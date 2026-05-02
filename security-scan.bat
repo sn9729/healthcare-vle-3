@@ -1,1 +1,1 @@
-bandit -r .
+python -m bandit -r .
